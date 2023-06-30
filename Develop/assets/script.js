@@ -30,6 +30,10 @@ function generatePassword() {
     }
 
   var characterCount = prompt("How many characters would you like in your password?")
+  if (characterCount === null) {
+    return "";
+  }
+  
   characterCount = parseInt(characterCount)
   
   while (characterCount < 8 || characterCount > 128) {
@@ -42,13 +46,17 @@ function generatePassword() {
     alert("Moron, do you want a password or not?")
     doOver()
   }
+  
   console.log(userInput);
 
+  var password = "";
+
+  for (var i = 0; i < userInput.length; i++) {
+  password += userInput[Math.floor(Math.random() * userInput.length)];
+  
+  }
+  return password;
 }
-
-
-
-
 
 
 // Assignment Code

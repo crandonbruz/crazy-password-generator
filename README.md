@@ -5,7 +5,7 @@ Here is the assignment for generating a password. In this assignment, we were su
 ## Installation
 N/A
 ## Usage
-N/A
+[Click to see the final product] ()
 ## Credits
 N/A
 ## License
