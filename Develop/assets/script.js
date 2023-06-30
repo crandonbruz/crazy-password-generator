@@ -10,22 +10,22 @@ function generatePassword() {
     function doOver() {
       var numbers = confirm("Would you like to include numbers into your password?")
       if (numbers) {
-        userInput =userInput.concat(numArray)
+        userInput = userInput.concat(numArray)
       }
 
       var speCharacters = confirm("Would you like to include special characters into your password?")
       if (speCharacters) {
-        userInput =userInput.concat(special)
+        userInput = userInput.concat(special)
       }
 
       var tall = confirm("Would you like to include uppercase letters into your password?")
       if (tall) {
-        userInput =userInput.concat(tallLetter)
+        userInput = userInput.concat(tallLetter)
       }
 
       var lower = confirm("Would you like to include lowercase letters into your password?")
       if (lower) {
-        userInput =userInput.concat(lowLetter)
+        userInput = userInput.concat(lowLetter)
       }
     }
 
@@ -44,23 +44,7 @@ function generatePassword() {
   }
   console.log(userInput);
 
-  
 }
-
-
-
-// Prompt about how many characters of code
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -77,7 +61,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
