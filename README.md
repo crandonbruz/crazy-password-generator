@@ -5,7 +5,7 @@ Here is the assignment for generating a password. In this assignment, we were su
 ## Installation
 N/A
 ## Usage
-[Click to see the final product] ()
+[Click to see the final product] (https://crandonbruz.github.io/pirate-king/)
 ## Credits
 N/A
 ## License

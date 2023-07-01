@@ -7,27 +7,27 @@ const lowLetter = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "
 
 function generatePassword() {
   var userInput = []
-    function doOver() {
-      var numbers = confirm("Would you like to include numbers into your password?")
-      if (numbers) {
-        userInput = userInput.concat(numArray)
-      }
-
-      var speCharacters = confirm("Would you like to include special characters into your password?")
-      if (speCharacters) {
-        userInput = userInput.concat(special)
-      }
-
-      var tall = confirm("Would you like to include uppercase letters into your password?")
-      if (tall) {
-        userInput = userInput.concat(tallLetter)
-      }
-
-      var lower = confirm("Would you like to include lowercase letters into your password?")
-      if (lower) {
-        userInput = userInput.concat(lowLetter)
-      }
+  function doOver() {
+    var numbers = confirm("Would you like to include numbers into your password?")
+    if (numbers) {
+      userInput = userInput.concat(numArray)
     }
+
+    var speCharacters = confirm("Would you like to include special characters into your password?")
+    if (speCharacters) {
+      userInput = userInput.concat(special)
+    }
+
+    var tall = confirm("Would you like to include uppercase letters into your password?")
+    if (tall) {
+      userInput = userInput.concat(tallLetter)
+    }
+
+    var lower = confirm("Would you like to include lowercase letters into your password?")
+    if (lower) {
+      userInput = userInput.concat(lowLetter)
+    }
+  }
 
   var characterCount = prompt("How many characters would you like in your password?")
   if (characterCount === null) {
@@ -52,22 +52,18 @@ function generatePassword() {
   var password = "";
 
   for (var i = 0; i < characterCount; i++) {
-  password += userInput[Math.floor(Math.random() * userInput.length)];
-  
+    password += userInput[Math.floor(Math.random() * userInput.length)];
   }
   return password;
 }
 
-
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 
