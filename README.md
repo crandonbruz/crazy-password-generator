@@ -12,4 +12,4 @@ N/A
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Useful Links
-![Screenshot of generate password website](./assets/images/127.0.0.1_5501_index.html.png)
+![Screenshot of generate password website](./Assets/images/127.0.0.1_5501_index.html.png)
